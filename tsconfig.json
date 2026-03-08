@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    // Output and Module
+    "target": "ES2023",               // Modern JS output
+    "module": "ESNext",               // ESM modules
+    "moduleResolution": "node",       // Resolves imports like Node.js
+    "allowImportingTsExtensions": true, // Allow .ts imports in ESM
+    "esModuleInterop": true,          // For importing CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                   // Strict TypeScript checks
+    "skipLibCheck": true,             // Skip checking types of node_modules
+    "isolatedModules": true,          // For tools like tsx or vite
+    "noEmit": true,                   // Don't emit compiled files (tsx handles it)
+
+    // Output files (optional)
+    "rootDir": "./src",               // Source files
+    "outDir": "./dist",               // Compiled JS
+
+    // Type Definitions
+    "types": ["node"],                // Node.js types
+
+    // Source Maps and Declarations
+    "sourceMap": true,                
+    "declaration": true,              
+    "declarationMap": true
+  },
+  "include": ["src"],                  // TypeScript will look here for source code
+  "exclude": ["node_modules", "dist"]  // Ignore these folders
+}
